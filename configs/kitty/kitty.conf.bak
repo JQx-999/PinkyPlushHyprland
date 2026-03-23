@@ -1,0 +1,13 @@
+# Include other.conf
+include other.conf
+# Include *.conf files from all subdirs of kitty.d inside the kitty config dir
+globinclude kitty.d/**/*.conf
+# Include the *contents* of all env vars starting with KITTY_CONF_
+envinclude KITTY_CONF_*
+# Run the script dynamic.py placed in the same directory as this config file
+# and include its :file:`STDOUT`. Note that Python scripts are fastest
+# as they use the embedded Python interpreter, but any executable script
+# or program is supported, in any language. Remember to mark the script
+# file executable.
+geninclude dynamic.py
+# font_family	"JetBrainsMono Nerd Font"

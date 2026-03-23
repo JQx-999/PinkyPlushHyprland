@@ -1,0 +1,11 @@
+style=~/.config/wofi/style.pmenu.css
+show=dmenu
+width=250
+height=240
+yoffset=5
+xoffset=-15
+allow_images=true
+location=top_right
+hide_search=true
+hide_scroll=true
+sort_order=alphabetical

@@ -1,0 +1,260 @@
+
+
+* {
+    border: none;
+    border-radius: 10px;
+    font-family: "JetBrainsMono NF" , monospace;
+    font-size: 12px;
+    min-height: 0;
+	font-weight: bolder;
+	padding: 2px;
+}
+
+window#waybar {
+    background: rgba(192, 58, 103, 0.5);
+    color: white;
+}
+
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: white;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+    background: rgba(237,160,226,1);
+    border-bottom: 3px solid white;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#clock {
+    background: rgba(237,160,122,1);
+    padding: 10px; 
+}
+
+#clock:hover {
+	border: 3px solid rgba(237,190,122,1);
+	padding: 7px;
+}
+
+#power-profiles-daemon {
+	background: rgba(237,160,122,1);
+}
+
+#power-profiles-daemon:hover {
+	border: 2px solid rgba(237,190,122,1);
+        padding: 0px;
+}
+
+#custom-screenshot {
+	background: rgba(237,97,225,1);
+}
+
+#custom-screenshot:hover {
+	border: 2px solid rgba(237,160,225,1);
+	padding: 0px;
+}
+
+#workspaces button {
+	background-color: rgba (237,97,225,1);
+	padding: 0px 8px 0px 8px;
+	margin: 0px 2px;
+}
+
+#workspaces button.active {
+	background: rgba(237,29,226,1);
+}
+
+
+#cava {
+	font-weight: normal;
+	font-size: 20px;
+	padding: 0px 10px;
+	background: rgba(237,150,225,1);
+	color: rgba(232,146,67,0.65);
+}
+
+#cava:hover {
+        border: 2px solid rgba(237,200,225,1);
+        padding: 0px 8px;
+}
+
+#cava.updated {
+	color: rgba(253,155,122,1);
+}
+
+#window {
+	background: rgba(237,161,100,1);
+	font-size: 12px;
+}
+
+#window:hover {
+        border: 2px solid rgba(237,190,122,1);
+        padding: 0px;
+}
+
+windows#waybar.firefox {
+	background-color: rgba(249,106,67,1);
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+#battery {
+    background: rgba(237,160,122,1);
+    color: white;
+}
+
+#battery:hover {
+        border: 2px solid rgba(237,190,122,1);
+        padding: 0px;
+}
+
+#backlight {
+	background: rgba(237,97,225,1);
+}
+
+#backlight:hover {
+        border: 2px solid rgba(237,160,225,1);
+        padding: 0px;
+}
+
+#temperature {
+	background: rgba(237,97,225,1);
+}
+
+#temperature:hover {
+        border: 2px solid rgba(237,160,225,1);
+        padding: 0px;
+}
+
+#memory {
+	background: rgba(237,160,122,1);
+}
+
+#memory:hover {
+        border: 2px solid rgba(237,190,122,1);
+        padding: 0px;
+}
+
+#cpu {
+	background: rgba(237,97,225,1);
+	
+}
+
+#cpu:hover {
+        border: 2px solid rgba(237,160,225,1);
+        padding: 0px;
+}
+
+#network {
+	background: rgba(237,160,122,1);
+}
+
+#network:hover {
+        border: 2px solid rgba(237,190,122,1);
+        padding: 0px;
+}
+
+#custom-bluetooth {
+	background: rgba(237,97,225,1);
+}
+
+#custom-bluetooth:hover {
+        border: 2px solid rgba(237,160,225,1);
+        padding: 0px;
+}
+
+#pulseaudio-slider {
+	background: rgba(237,160,122,1);
+	padding: 2px;
+}
+
+#pulseaudio-slider:hover {
+        border: 3px solid rgba(237,190,122,1);
+        padding: 1px;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+#battery.charging:hover {
+	border-color: rgba(119,220,129,1);
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.warning:not(.charging):hover {
+	border-color: rgba(246,143,143,1);
+}
+
+#pulseaudio-slider {
+    padding: 4px;
+    margin: 0;
+}
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+	border-radius: 7.5px;
+    border: 3px solid;
+	border-color: rgba(118,87,73,1);
+    background: rgba(224,36,122,1);
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 100px;
+    border-radius: 5px;
+    background: rgba(224,108,122,0.4);
+	padding: 2px;
+	margin: 0px 8px;
+}
+#pulseaudio-slider highlight {
+    min-width: 0px;
+    border-radius: 5px;
+    background: rgba(224,108,122,1);
+	
+}
+
+#custom-lock {
+	background: rgba(255,130,76,1);
+}
+
+#custom-lock:hover {
+        border: 2px solid rgba(255,170,134,1);
+        padding: 0px;
+}

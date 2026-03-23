@@ -1,0 +1,13 @@
+width=510
+height=800
+location=center
+show=drun
+prompt=Search...
+filter_rate=100
+insensitive=true
+allow_images=true
+sort_order=default
+image_size=25
+hide_scroll=true
+
+key_expand=Tab
